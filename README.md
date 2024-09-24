@@ -1,71 +1,29 @@
-[![Screenshot of the Website](https://raw.githubusercontent.com/mikepierce/conference-website-template/master/screenshot.png)](https://mikepierce.github.io/conference-website-template/)
+# Star Formation Studies in India 2025 Website
 
----
+This repository hosts the website for the **Star Formation Studies in India 2025** conference, which will be jointly organized by **CHRIST (Deemed to be University), Bangalore** and the **Indian Institute of Astrophysics, Bangalore**. The event is tentatively scheduled for **May 3-6, 2025**.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-orange)](https://www.buymeacoffee.com/mpierce)
+This HTML/CSS template is simple to customize and deploy, perfect for academic conferences and seminars. The website can be hosted using GitHub Pages or university hosting servers.
 
-An HTML/CSS website template perfect for a small academic conference or seminar.
-It's quick and straightforward to customize.
-You can [explore it live here](https://mikepierce.github.io/conference-website-template/),
-and see some folks' use of the template
-[here](https://math.ucr.edu/~mathconn/) 
-and [here](https://data-science-conference.github.io) 
-and [here](https://aquaticdatasciopensci.github.io) 
-and [here](https://comp-expe.github.io) 
-and [here](https://enba-phd-call.github.io).
-I'd be happy to see the site you create from my template ☺
+You can [view the live site here](https://your-username.github.io/star-formation-2025).
 
 ## Installation
 
-If you have access to server for web hosting, 
-perhaps through your university or academic department, 
-then using this template is as easy as cloning this repository 
-directly into your public HTML directory.
-If not you can pretty easily host a website using this template with [GitHub Pages](https://pages.github.com/).
-See that link for more details, but the basic procedure is this:
+To set up the website using GitHub Pages, follow these steps:
 
- 1. Create a GitHub repository named `username.github.io`, 
- where *username* is your username on GitHub.
+1. **Create the Repository:**
+   Create a GitHub repository named `username.github.io`, where _username_ is your GitHub username.
 
- 2. Click the *Use this template* button above, 
- being sure to give your copy of this repository a more apt name,
- like *awesome-conference*.
+2. **Use the Template:**
+   Click the **Use this template** button above, and name the repository appropriately, e.g., `star-formation-2025`.
 
- 3. In your copy go to *Settings* and scroll down to *GitHub Pages*.
- Under *Source* choose the master branch of your forked copy.
- Then your copy of the website will be hosted at `username.github.io/awesome-conference`.
+3. **Enable GitHub Pages:**
+   In your repository settings, scroll down to the **GitHub Pages** section and select the `master` branch. The website will then be hosted at `https://username.github.io/star-formation-2025`.
 
 ## Beautiful Math with MathJax (optional)
 
-It may be helpful to include mathematical notation on this website, especially in the abstracts of talks. 
-This can be done using [MathJax](https://github.com/mathjax/MathJax).
-For an example see the [*programs* page](https://mikepierce.github.io/conference-website-template/program/) of the template site.
-To include math in a page of this website, include the lines
+If you need to include mathematical notation in the website, you can use MathJax. To do this, add the following code to the `<head>` of the HTML files where math is required:
 
-````HTML
+```html
 <script type="text/javascript" async 
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default"> 
 </script>
-````
-
-in the `<head>` of the HTML file. Then math can by typeset by using LaTeX's math notation enclosed in `\(...\)` delimiters.
-
-## Sitemap (optional)
-
-The file `sitemap.xml` helps search engines understand the structure of your site.
-In this file, each instance of "WEBSITE" should be replaced
-with the actual address where this website is being hosted.
-See the [sitemaps protocol page](https://www.sitemaps.org/protocol.html) for more details.
-
-## Alternatives
-
-The simplicity of the HTML/CSS source for this template is its strongest feature.
-For something more slick or modern or sophisticated or complicated:
-
- - [Hoverboard](https://github.com/gdg-x/hoverboard) is beautiful but requires some tech know-how to setup. 
-
- - You can build something from scratch based on a 
- [GitHub Pages site with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll) 
- or a template from [Pixelarity](https://pixelarity.com).
-
