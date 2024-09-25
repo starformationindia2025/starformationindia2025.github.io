@@ -61,7 +61,8 @@ p, ul {
 /* Navigation */
 .navigation {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column; /* Change layout to vertical */
+  align-items: center; /* Align items in the center */
   margin: 2em 0;
 }
 
@@ -69,6 +70,7 @@ p, ul {
   font-size: 1.67rem;
   padding: 0.5em;
 }
+
 
 /* Banner */
 .banner {
