@@ -104,6 +104,10 @@ p, ul {
   text-shadow: 0 0 12px #000;
 }
 
+.title1{font-size: 2.167em; color: #fafafa;} 
+.title2{font-size: 4.33em; color: #b2132e; text-shadow: 0px 0px 4px #fafafa;}
+.year{font-size: 4.33em; color: #fafafa;}
+
 /* Responsive design */
 @media (max-width: 768px) {
   body {
