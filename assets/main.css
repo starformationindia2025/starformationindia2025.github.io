@@ -61,8 +61,8 @@ p, ul {
 /* Navigation */
 .navigation {
   display: flex;
-  flex-direction: column; /* Change layout to vertical */
-  align-items: center; /* Align items in the center */
+  flex-direction: row; /* Change layout to horizontal */
+  justify-content: space-around; /* Space out the elements horizontally */
   margin: 2em 0;
 }
 
