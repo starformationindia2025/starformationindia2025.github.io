@@ -77,10 +77,21 @@ p, ul {
 }
 
 .top-left {
-  color: var(--background-color);
-  padding: 27px 0 27px 36px;
+  color: #fafafa;
+  line-height: 1.5em;
+  text-align: left;
+  width: auto;
+  height: 100px;
   position: absolute;
+  padding: 0px 0px 27px 36px;
   top: 27px;
+}
+
+.top-left br {
+  content: "";
+  margin: 1.5em;
+  display: block;
+  font-size: 100%;
 }
 
 .bottom-right {
