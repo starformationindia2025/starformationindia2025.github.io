@@ -114,6 +114,22 @@ p, ul {
 .year{font-size: 3.93em; color: #fafafa;}
 
 /* Responsive design */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px; /* Slightly smaller font for tablets */
+  }
+
+  .navigation {
+    flex-direction: column; /* Stack the navigation links vertically */
+    align-items: center;
+  }
+
+  .navigation a {
+    margin-bottom: 1em; /* Add space between stacked links */
+  }
+}
+
+/* Responsive Design: For devices with width less than 768px (e.g., mobile phones) */
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -135,5 +151,4 @@ p, ul {
     padding: 1em;
   }
 }
-
 /* Add more specific styles here */
