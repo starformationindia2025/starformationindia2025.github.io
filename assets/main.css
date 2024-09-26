@@ -1,4 +1,5 @@
 /* main.css */
+
 :root {
   /* Colors */
   --background-color: #fafafa;
@@ -7,16 +8,20 @@
   --red: #b2132e;
   --heading-color: #813c54;
   --link-color: #b8860b;
+
   /* Fonts */
   --title-font: 'Roboto', sans-serif;
   --body-font: 'Roboto Slab', serif;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -25,112 +30,142 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   max-width: 1000px;
-  padding: 3.75rem 1.25rem; /* Changed to rem for consistency */
+  padding: 60px 20px;
 }
+
 a {
   color: var(--link-color);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--red);
 }
+
 h1, h2, h3, h4 {
   color: var(--heading-color);
   font-family: var(--title-font);
   margin: 1.5em 0 1em;
 }
+
 h1 { font-size: 2.67rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.67rem; }
 h4 { font-size: 1.33rem; }
+
 p, ul {
   margin: 1.5em auto;
   max-width: 900px;
 }
+
 /* Navigation */
 .navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  flex-direction: row; /* Ensures horizontal layout */
+  justify-content: space-around; /* Space out items evenly */
+  width: 100%; /* Ensure the navigation container takes full width */
 }
+
 .navigation a {
   font-size: 1.67rem;
   padding: 0.5em;
-  flex-shrink: 0;
-  white-space: nowrap;
+  flex-shrink: 0; /* Prevent links from shrinking */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
+
+
+
 /* Banner */
 .banner {
   position: relative;
   font-family: var(--title-font);
-  padding: 1.5rem; /* Added padding for better mobile display */
 }
+
 .top-left {
   color: #fafafa;
-  line-height: 1.5;
+  line-height: 1.5em; /* Add or modify this to increase spacing */
   text-align: left;
-  width: 100%; /* Changed to 100% for better responsiveness */
-  position: relative; /* Changed from absolute to relative */
-  padding: 1rem; /* Unified padding */
+  width: auto;
+  height: 100px;
+  position: absolute;
+  padding: 0px 0px 27px 36px;
+  top: 27px;
 }
+
 .top-left br {
   content: "";
-  margin: 0.75rem 0; /* Changed to rem and reduced for better spacing */
+  margin: 1.5em;
   display: block;
+  font-size: 100%;
 }
+
 .bottom-right {
   color: var(--background-color);
   font-size: 1.35rem;
-  padding: 1rem; /* Unified padding */
-  position: relative; /* Changed from absolute to relative */
-  text-align: right; /* Align text to the right */
-  text-shadow: 0 0 0.75rem #000; /* Changed to rem */
+  padding: 0 27px 27px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-shadow: 0 0 12px #000;
 }
+
 .title1 {
-  font-size: 1.967rem; 
+  font-size: 1.967em; 
   color: #fafafa;
-  line-height: 1.5;
+  line-height: 1.5em; /* Adjust this value to increase spacing */
 }
+
 .title2 {
-  font-size: 3.93rem; 
+  font-size: 3.93em; 
   color: #FFFF00; 
-  text-shadow: 0 0 0.25rem #fafafa; /* Changed to rem */
-  line-height: 1.5;
+  text-shadow: 0px 0px 4px #fafafa;
+  line-height: 1.5em; /* Adjust this value to increase spacing */
 }
+
 .year {
-  font-size: 3.93rem;
+  font-size: 3.93em;
   color: #0000FF;
-  text-shadow: 0 0 0.25rem #fafafa; /* Changed to rem */
-  line-height: 1.2;
+  text-shadow: 0px 0px 4px #fafafa;
+  line-height: 1.0em; /* Adjust this value to increase spacing */
 }
+
+
 /* Responsive design */
 @media (max-width: 1024px) {
   body {
-    font-size: 15px;
+    font-size: 15px; /* Slightly smaller font for tablets */
   }
+
   .navigation {
-    flex-direction: column;
+    flex-direction: column; /* Stack the navigation links vertically */
     align-items: center;
   }
+
   .navigation a {
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* Add space between stacked links */
   }
 }
+
 /* Responsive Design: For devices with width less than 768px (e.g., mobile phones) */
 @media (max-width: 768px) {
   body {
     font-size: 14px;
   }
-  .banner {
-    text-align: center; /* Center align banner content on mobile */
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
   }
-  .top-left, .bottom-right {
+
+  .navigation a {
+    margin-bottom: 1em;
+  }
+
+  .banner .top-left,
+  .banner .bottom-right {
+    position: static;
     text-align: center;
-    padding: 1rem 0; /* Adjust padding for mobile */
-  }
-  .title1, .title2, .year {
-    font-size: 2rem; /* Reduce font sizes for mobile */
+    padding: 1em;
   }
 }
 /* Add more specific styles here */
