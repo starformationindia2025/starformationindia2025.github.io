@@ -75,7 +75,7 @@ p, ul {
   font-family: var(--title-font);
   margin-bottom: 2em;
   overflow: hidden;
-  height: 300px; /* Adjust based on your needs */
+  height: 400px; /* Adjust based on your needs */
 }
 .banner-image-container {
   position: absolute;
