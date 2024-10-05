@@ -181,10 +181,10 @@ p, ul {
     font-size: 1rem;
   }
   .title1 {
-    font-size: 1.4em;
+    font-size: 0.4em;
   }
   .title2, .year {
-    font-size: 2.4em;
+    font-size: 0.7em;
   }
 }
 @media (max-width: 480px) {
