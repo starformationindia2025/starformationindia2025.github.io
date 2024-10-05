@@ -75,7 +75,7 @@ p, ul {
   font-family: var(--title-font);
   margin-bottom: 2em;
   overflow: hidden;
-  height: 550px; /* Adjust based on your needs */
+  height: 550px; /* Maintain original height for desktop */
 }
 .banner-image-container {
   position: absolute;
@@ -171,7 +171,7 @@ p, ul {
     flex-basis: 100%;
   }
   .banner {
-    height: 200px; /* Adjust for smaller screens */
+    height: 300px; /* Adjust for smaller screens */
   }
   .banner .top-left {
     padding: 15px 0 0 20px;
@@ -185,5 +185,23 @@ p, ul {
   }
   .title2, .year {
     font-size: 2.4em;
+  }
+}
+@media (max-width: 480px) {
+  .banner {
+    height: 200px;
+  }
+  .banner .top-left {
+    padding: 10px 0 0 15px;
+  }
+  .banner .bottom-right {
+    padding: 0 10px 10px 0;
+    font-size: 0.9rem;
+  }
+  .title1 {
+    font-size: 1.2em;
+  }
+  .title2, .year {
+    font-size: 2em;
   }
 }
