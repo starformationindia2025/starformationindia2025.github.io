@@ -8,8 +8,8 @@
   --heading-color: #813c54;
   --link-color: #b8860b;
   /* Fonts */
-  --title-font: 'Roboto', sans-serif;
-  --body-font: 'Roboto Slab', serif;
+  --title-font: 'Archivo Narrow', sans-serif;
+  --body-font: 'Archivo Narrow', serif;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab&display=swap');
 * {
