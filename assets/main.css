@@ -204,7 +204,7 @@ p, ul {
   }
   .banner .bottom-right {
     padding: 0 10px 10px 0;
-    font-size: 0.1rem;
+    font-size: 0.25rem;
     max-width: 70%; /* Further increase max-width for smallest screens */
   }
   .title1 {
