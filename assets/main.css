@@ -23,10 +23,10 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px; /* Increased from 16px */
+  line-height: 1.6; /* Slightly increased for better readability */
   margin: 0 auto;
-  max-width: 1200px; /* Increased from 1000px */
+  max-width: 1200px;
   padding: 60px 20px;
 }
 
@@ -51,10 +51,8 @@ h3 { font-size: 1.67rem; }
 h4 { font-size: 1.33rem; }
 
 p, ul {
-  margin: 1.5em auto;
+  margin: 1.2em auto;
   max-width: 900px;
-  color: var(--text-color);
-  font-family: var(--body-font);
 }
 
 /* Navigation */
@@ -67,7 +65,7 @@ p, ul {
 }
 
 .navigation a {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Slightly reduced to fit better */
   padding: 0.5em 1em;
   margin: 0.5em;
   flex-grow: 1;
@@ -80,7 +78,6 @@ p, ul {
 
 .navigation a:hover {
   background-color: var(--red);
-  color: var(--background-color);
 }
 
 /* Banner */
@@ -116,24 +113,26 @@ p, ul {
 }
 
 .title1 {
-  font-size: 1.8em; 
+  font-size: 1.6em; 
   color: #fafafa;
   margin-bottom: 0.5em;
 }
 
 .title2 {
-  font-size: 3em; 
+  font-size: 2.8em; 
   color: #FFFF00; 
   text-shadow: 0px 0px 4px #fafafa;
   line-height: 1.2em;
 }
 
 .year {
-  font-size: 3em;
+  font-size: 2.8em;
   color: #0000FF;
   text-shadow: 0px 0px 4px #fafafa;
   margin-top: 0.5em;
 }
+
+/* Two-column layout */
 .two-column-container {
   display: flex;
   flex-wrap: wrap;
@@ -146,29 +145,22 @@ p, ul {
   margin-bottom: 1em;
 }
 
-/* Ensure that list items in the columns don't exceed the column width */
 .column ul {
   padding-left: 1.5em;
   max-width: 100%;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .column {
-    flex-basis: 100%;
-  }
-}
 /* Responsive design */
 @media (max-width: 1200px) {
   body {
-    font-size: 15px;
+    font-size: 17px;
     padding: 40px 15px;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
     padding: 20px 10px;
   }
 
@@ -178,6 +170,10 @@ p, ul {
 
   .navigation a {
     margin-bottom: 0.5em;
+  }
+
+  .column {
+    flex-basis: 100%;
   }
 
   .banner .top-left {
@@ -190,12 +186,10 @@ p, ul {
   }
 
   .title1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .title2, .year {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
 }
-
-/* Add any additional specific styles here */
