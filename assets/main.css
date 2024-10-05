@@ -184,7 +184,7 @@ p, ul {
   }
   .banner .bottom-right {
     padding: 0 15px 15px 0;
-    font-size: 0.9rem;
+    font-size: 0.45rem;
     max-width: 70%; /* Increase max-width for better readability */
   }
   .title1 {
