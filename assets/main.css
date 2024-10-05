@@ -116,6 +116,7 @@ p, ul {
   right: 0;
   text-shadow: 0 0 12px #000;
   z-index: 1;
+  max-width: 60%; /* Limit width to prevent overflow */
 }
 .title1 {
   font-size: 1.6em; 
@@ -155,7 +156,12 @@ p, ul {
     font-size: 17px;
     padding: 40px 15px;
   }
+  .bottom-right {
+    font-size: 1.1rem;
+    padding: 0 20px 20px 0;
+  }
 }
+
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -171,22 +177,24 @@ p, ul {
     flex-basis: 100%;
   }
   .banner {
-    height: 350px; /* Adjust for smaller screens */
+    height: 300px; /* Adjust for smaller screens */
   }
   .banner .top-left {
     padding: 15px 0 0 20px;
   }
   .banner .bottom-right {
     padding: 0 15px 15px 0;
-    font-size: 0.2rem;
+    font-size: 0.9rem;
+    max-width: 70%; /* Increase max-width for better readability */
   }
   .title1 {
-    font-size: 0.1em;
+    font-size: 1.4em;
   }
   .title2, .year {
-    font-size: 0.14em;
+    font-size: 2.4em;
   }
 }
+
 @media (max-width: 480px) {
   .banner {
     height: 200px;
@@ -196,7 +204,8 @@ p, ul {
   }
   .banner .bottom-right {
     padding: 0 10px 10px 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    max-width: 80%; /* Further increase max-width for smallest screens */
   }
   .title1 {
     font-size: 1.2em;
