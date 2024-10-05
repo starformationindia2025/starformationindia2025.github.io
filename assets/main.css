@@ -177,14 +177,14 @@ p, ul {
     flex-basis: 100%;
   }
   .banner {
-    height: 300px; /* Adjust for smaller screens */
+    height: 360px; /* Adjust for smaller screens */
   }
   .banner .top-left {
     padding: 15px 0 0 20px;
   }
   .banner .bottom-right {
     padding: 0 15px 15px 0;
-    font-size: 0.1rem;
+    font-size: 0.25rem;
     max-width: 70%; /* Increase max-width for better readability */
   }
   .title1 {
