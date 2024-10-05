@@ -1,6 +1,15 @@
 /* main.css */
 :root {
-  /* Colors and fonts remain the same */
+  /* Colors */
+  --background-color: #fafafa;
+  --text-color: #505050;
+  --navy: #52739e;
+  --red: #b2132e;
+  --heading-color: #813c54;
+  --link-color: #b8860b;
+  /* Fonts */
+  --title-font: 'Roboto', sans-serif;
+  --body-font: 'Roboto Slab', serif;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab&display=swap');
 
@@ -21,19 +30,44 @@ body {
   padding: 60px 20px;
 }
 
-/* Other styles for a, h1, h2, h3, h4, p, ul remain the same */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading-color);
+  font-family: var(--title-font);
+  margin: 1.5em 0 1em;
+}
+
+h1 { font-size: 2.67rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.67rem; }
+h4 { font-size: 1.33rem; }
+
+p, ul {
+  margin: 1.5em auto;
+  max-width: 900px;
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
 
 /* Navigation */
 .navigation {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   margin-bottom: 2em;
 }
 
 .navigation a {
-  font-size: 1.2rem; /* Slightly reduced for better fit */
+  font-size: 1.2rem;
   padding: 0.5em 1em;
   margin: 0.5em;
   flex-grow: 1;
