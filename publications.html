@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Publications"
+---
+<div class="publications-content">
+  <h2>Publications</h2>
+  <ul>
+    {% for publication in site.data.publications %}
+    <li>
+      <h3>{{ publication.title }}</h3>
+      <p>Authors: {{ publication.authors }}</p>
+      <p>Year: {{ publication.year }}</p>
+      <a href="{{ publication.download_link }}" target="_blank">Download PDF</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

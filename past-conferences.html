@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Past Conferences"
+---
+<div class="conferences-content">
+  <h2>Past Conferences</h2>
+  <ul>
+    {% for conference in site.data.conferences %}
+    <li>
+      <h3>{{ conference.title }}</h3>
+      <p>{{ conference.date }} - {{ conference.location }}</p>
+      <p>{{ conference.description }}</p>
+      <img src="{{ conference.image_url }}" alt="Conference image">
+    </li>
+    {% endfor %}
+  </ul>
+</div>
